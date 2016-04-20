@@ -1,0 +1,79 @@
+﻿@model IEnumerable<wardrobeProject_test1.Models.Tops>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+
+
+@*CUSTOM THUMBNAIL*@
+
+@*<div class="container">
+
+
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 portfolio-item">
+                <img src="@Url.Content(item.Photo)" />
+                <div class="col-sm-12 portfolio-item">
+                    <h6 align ="center">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.TopsID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+
+                    </h6>
+                </div>
+            </div>
+        }
+
+    </div>
+
+</div>*@
+
+
+
+@*BOOTSTRAP THUMBNAILS*@
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <img src="@Url.Content(item.Photo)" />
+                    <div class="caption">
+                        <h3>@Url.Content(item.Nickname)</h3>
+                        <p>...</p>
+                        <p><a href="#" class="btn btn-primary" role="button">View</a> @Html.ActionLink("Edit", "Edit", "Tops", null, new { @class = "btn btn-primary" })</p>
+                        <h6 align="center">
+                            @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.TopsID }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+                           
+
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
