@@ -12,6 +12,11 @@ namespace wardrobeProject_test1.Controllers
 {
     public class TopsController : Controller
     {
+        public ActionResult ManageTops()
+        {
+            return View(db.Tops.ToList());
+        }
+
         private wardrobeProject_test1Context db = new wardrobeProject_test1Context();
 
         // GET: Tops
