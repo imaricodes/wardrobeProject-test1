@@ -169,6 +169,10 @@
     <Compile Include="Migrations\201604201725226_AddTeams.Designer.cs">
       <DependentUpon>201604201725226_AddTeams.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604210046085_AddHomePage.cs" />
+    <Compile Include="Migrations\201604210046085_AddHomePage.Designer.cs">
+      <DependentUpon>201604210046085_AddHomePage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Tops.cs" />
@@ -182,8 +186,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\banner-bg.jpg" />
+    <Content Include="Content\img\dog.png" />
+    <Content Include="Content\img\intro-bg.jpg" />
+    <Content Include="Content\img\ipad.png" />
+    <Content Include="Content\img\phones.png" />
     <Content Include="Content\img\yellowT.jpg" />
+    <Content Include="Content\landing-page.css" />
+    <Content Include="Content\round-about.css" />
     <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -200,6 +212,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -258,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604201725226_AddTeams.resx">
       <DependentUpon>201604201725226_AddTeams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604210046085_AddHomePage.resx">
+      <DependentUpon>201604210046085_AddHomePage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
