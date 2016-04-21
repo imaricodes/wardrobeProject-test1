@@ -8,24 +8,35 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            @*<a class="navbar-brand" href="#">Naked Not</a>*@
+            @Html.ActionLink("Naked Not", "Index", "Home", null, new { @class = "navbar-brand" })
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="#">About</a>
+            <ul class="nav navbar-nav navbar-right">
+                
+                <li class="dropdown">
+                    <a href=" - "#" class="dropdown-toggle" data-toggle="dropdown">Manage</span></a> 
+                    <ul class="dropdown-menu" role="menu">
+                        <li>@Html.ActionLink("Tops", "Index", "Tops", null, new { @class = "" })</li>
+                        <li>@Html.ActionLink("Bottoms", "Index", "Tops", null, new { @class = "" })</li>
+                        <li>@Html.ActionLink("Shoes", "Index", "Tops", null, new { @class = "" })</li>
+                        <li>@Html.ActionLink("Accessories", "Index", "Tops", null, new { @class = "" })</li>
+
+                    </ul>
                 </li>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+
             </ul>
+
+
         </div>
         <!-- /.navbar-collapse -->
     </div>
     <!-- /.container -->
 </nav>
+
+
