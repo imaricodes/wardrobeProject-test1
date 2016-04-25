@@ -2,66 +2,49 @@
 
 @{
     ViewBag.Title = "Details";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_OtherLayout.cshtml";
 }
-
 <h2>Details</h2>
 
-<div>
-    <h4>Tops</h4>
+
+
+
+    <div class="row text-center">
+
+    @Html.DisplayFor(model => model.Nickname)
+
+    </div>
     <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Nickname)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Nickname)
-        </dd>
+    <div class="row text-center">
+        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+    <hr />
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
+    <div class="row text-center">
+        <p>@Html.DisplayFor(model => model.Type)</p>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
+    <div class="row text-center">
+        <p>@Html.DisplayFor(model => model.Color)</p>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
+    <div class="row text-center">
+        <p>@Html.DisplayFor(model => model.Season)</p>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Season)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Season)
-        </dd>
+    <div class="row text-center">
+        <p>@Html.DisplayFor(model => model.Occasion)</p>
+    </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
-
-    </dl>
-</div>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.TopsID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back", "Index")
 </p>
+
+

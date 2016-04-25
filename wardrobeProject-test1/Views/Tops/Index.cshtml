@@ -36,6 +36,9 @@
 @*BOOTSTRAP THUMBNAILS*@
 
 <div class="container" style="padding-top: 25px">
+    <p>
+        @Html.ActionLink("Add To Collection", "Create")
+    </p>
     <div class="row">
         @foreach (var item in Model)
         {
@@ -47,29 +50,17 @@
                         
                         <h6 align="center">
                             @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
-                            @Html.ActionLink("Details", "Details", new { id = item.TopsID }) |
-                            @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
+                            @Html.ActionLink("Details", "Details", new { id = item.TopsID }) 
                           
                         </h6>
                     </div>
                 </div>
             </div>
         }
-        <p>
-            @Html.ActionLink("Add Top To Collection", "Create")
-        </p>
+       
     </div>
 
 
 
 </div>
-
-
-
-
-
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 
