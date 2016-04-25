@@ -18,14 +18,23 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                
                 <li class="dropdown">
-                    <a href=" - "#" class="dropdown-toggle" data-toggle="dropdown">Manage</span></a> 
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">View</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>@Html.ActionLink("Tops", "Index", "Tops", null, new { @class = "" })</li>
+                        <li>@Html.ActionLink("Bottoms", "Index", "Bottoms", null, new { @class = "" })</li>
+                        <li>@Html.ActionLink("Shoes", "Index", "ShoesModels", null, new { @class = "" })</li>
+                        <li>@Html.ActionLink("Accessories", "Index", "Accessories", null, new { @class = "" })</li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href= "#" class="dropdown-toggle" data-toggle="dropdown">Manage</a> 
                     <ul class="dropdown-menu" role="menu">
                         <li>@Html.ActionLink("Tops", "ManageTops", "Tops", null, new { @class = "" })</li>
-                        <li>@Html.ActionLink("Bottoms", "Index", "Tops", null, new { @class = "" })</li>
-                        <li>@Html.ActionLink("Shoes", "Index", "Tops", null, new { @class = "" })</li>
-                        <li>@Html.ActionLink("Accessories", "Index", "Tops", null, new { @class = "" })</li>
+                        <li>@Html.ActionLink("Bottoms", "ManageBottom", "Bottoms", null, new { @class = "" })</li>
+                        <li>@Html.ActionLink("Shoes", "ManageShoes", "ShoesModels", null, new { @class = "" })</li>
+                        <li>@Html.ActionLink("Accessories", "ManageAccessory", "Accessories", null, new { @class = "" })</li>
 
                     </ul>
                 </li>

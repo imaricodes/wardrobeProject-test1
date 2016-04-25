@@ -2,35 +2,13 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    
 }
 
 @*CUSTOM THUMBNAIL*@
 
-@*<div class="container">
 
-
-    <div class="row">
-
-        @foreach (var item in Model)
-        {
-            <div class="col-md-4 portfolio-item">
-                <img src="@Url.Content(item.Photo)" />
-                <div class="col-sm-12 portfolio-item">
-                    <h6 align ="center">
-                    @Html.ActionLink("Edit", "Edit", new { id = item.TopsID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.TopsID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.TopsID })
-
-                    </h6>
-                </div>
-            </div>
-        }
-
-    </div>
-
-</div>*@
-
+<h2>Tops</h2>
 
 
 @*BOOTSTRAP THUMBNAILS*@

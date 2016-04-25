@@ -1,0 +1,32 @@
+﻿@model IEnumerable<wardrobeProject_test1.Models.Accessory>
+
+@{
+    ViewBag.Title = "Index";
+  
+}
+
+<h2>Accessories</h2>
+
+<p>
+    @Html.ActionLink("Add To Collection", "Create")
+</p>
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+                <img src="@Url.Content(item.Photo)" class="img-circle img-responsive img-center" />
+                <div class="caption">
+                    <h3 class="text-center">@Url.Content(item.Nickname)</h3>
+
+                    <h6 align="center">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.AccessoryID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.AccessoryID })
+
+                    </h6>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>

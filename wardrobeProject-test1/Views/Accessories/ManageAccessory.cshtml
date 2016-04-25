@@ -1,0 +1,76 @@
+﻿
+@model IEnumerable<wardrobeProject_test1.Models.Accessory>
+@{
+    ViewBag.Title = "ManageAccessory";
+    Layout = "~/Views/Shared/_OtherLayout.cshtml";
+}
+
+<h2>Accessories</h2>
+<p>
+    @Html.ActionLink("Add to Collection", "Create")
+</p>
+<div class="container">
+    <div class="row">
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nickname)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Photo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Type)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Color)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Season)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Occasion)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nickname)
+                    </td>
+                    <td>
+                        <img src="@Url.Content(item.Photo)" style="height:100px; width:100px" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Type)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Color)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Season)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Occasion)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new {id = item.AccessoryID })
+                        |
+                        @Html.ActionLink("Delete", "Edit", new { id = item.AccessoryID})
+
+                       
+                    </td>
+                </tr>
+            }
+
+        </table>
+        <p>
+            @Html.ActionLink("Add to Collection", "Create")
+        </p>
+    </div>
+
+
+</div>
+

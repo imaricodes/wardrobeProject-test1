@@ -1,0 +1,29 @@
+﻿@model wardrobeProject_test1.Models.Bottom
+
+@{
+    ViewBag.Title = "Delete";
+
+}
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+
+    <hr />
+
+
+    <div class="row text-center">
+        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+    </div>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" />
+
+            | @Html.ActionLink("Back", "ManageBottom")
+
+        </div>
+    }
+</div>

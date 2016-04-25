@@ -1,0 +1,50 @@
+﻿@model wardrobeProject_test1.Models.ShoesModel
+
+@{
+    ViewBag.Title = "Details";
+   
+}
+
+<h2>Shoes</h2>
+
+<div class="row text-center">
+
+    @Html.DisplayFor(model => model.Nickname)
+
+</div>
+<hr />
+
+<div class="row text-center">
+    <div class="col-md-12 col-lg-12">
+        <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
+    </div>
+</div>
+
+<hr />
+
+<div class="row text-center">
+    <p>@Html.DisplayFor(model => model.Type)</p>
+</div>
+
+
+<div class="row text-center">
+    <p>@Html.DisplayFor(model => model.Color)</p>
+</div>
+
+
+<div class="row text-center">
+    <p>@Html.DisplayFor(model => model.Season)</p>
+</div>
+
+
+<div class="row text-center">
+    <p>@Html.DisplayFor(model => model.Occasion)</p>
+</div>
+
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID }) |
+    @Html.ActionLink("Back", "Index")
+</p>
+
+

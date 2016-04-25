@@ -155,8 +155,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccessoriesController.cs" />
+    <Compile Include="Controllers\BottomsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImagesController.cs" />
+    <Compile Include="Controllers\ShoesModelsController.cs" />
     <Compile Include="Controllers\TopsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -173,8 +176,39 @@
     <Compile Include="Migrations\201604210046085_AddHomePage.Designer.cs">
       <DependentUpon>201604210046085_AddHomePage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201604251138582_fix.cs" />
+    <Compile Include="Migrations\201604251138582_fix.Designer.cs">
+      <DependentUpon>201604251138582_fix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251152567_fix2.cs" />
+    <Compile Include="Migrations\201604251152567_fix2.Designer.cs">
+      <DependentUpon>201604251152567_fix2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251213528_shoes.cs" />
+    <Compile Include="Migrations\201604251213528_shoes.Designer.cs">
+      <DependentUpon>201604251213528_shoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251242481_shoesManage.cs" />
+    <Compile Include="Migrations\201604251242481_shoesManage.Designer.cs">
+      <DependentUpon>201604251242481_shoesManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251406416_accessory.cs" />
+    <Compile Include="Migrations\201604251406416_accessory.Designer.cs">
+      <DependentUpon>201604251406416_accessory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251558152_fixproblem.cs" />
+    <Compile Include="Migrations\201604251558152_fixproblem.Designer.cs">
+      <DependentUpon>201604251558152_fixproblem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201604251710110_bottom1.cs" />
+    <Compile Include="Migrations\201604251710110_bottom1.Designer.cs">
+      <DependentUpon>201604251710110_bottom1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Accessory.cs" />
+    <Compile Include="Models\Bottom.cs" />
     <Compile Include="Models\Image.cs" />
+    <Compile Include="Models\ShoesModel.cs" />
     <Compile Include="Models\Tops.cs" />
     <Compile Include="Models\wardrobeProject_test1Context.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -186,6 +220,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\customStyle.css" />
     <Content Include="Content\img\banner-bg.jpg" />
     <Content Include="Content\img\dog.png" />
     <Content Include="Content\img\intro-bg.jpg" />
@@ -262,6 +297,28 @@
     <Content Include="Views\Shared\_AddItemPartial.cshtml" />
     <Content Include="Views\Tops\ManageTops.cshtml" />
     <Content Include="Views\Shared\_OtherLayout.cshtml" />
+    <Content Include="Views\ShoesModels\Create.cshtml" />
+    <Content Include="Views\ShoesModels\Delete.cshtml" />
+    <Content Include="Views\ShoesModels\Details.cshtml" />
+    <Content Include="Views\ShoesModels\Edit.cshtml" />
+    <Content Include="Views\ShoesModels\Index.cshtml" />
+    <Content Include="Views\ShoesModels\ManageShoes.cshtml" />
+    <Content Include="Views\Accessories\Create.cshtml" />
+    <Content Include="Views\Accessories\Delete.cshtml" />
+    <Content Include="Views\Accessories\Details.cshtml" />
+    <Content Include="Views\Accessories\Edit.cshtml" />
+    <Content Include="Views\Accessories\Index.cshtml" />
+    <Content Include="Views\Accessories\ManageAccessory.cshtml" />
+    <Content Include="Views\ShoesModels\_ViewStart.cshtml" />
+    <Content Include="Views\Accessories\_ViewStart.cshtml" />
+    <Content Include="Views\Bottoms\Create.cshtml" />
+    <Content Include="Views\Bottoms\Delete.cshtml" />
+    <Content Include="Views\Bottoms\Details.cshtml" />
+    <Content Include="Views\Bottoms\Edit.cshtml" />
+    <Content Include="Views\Bottoms\Index.cshtml" />
+    <Content Include="Views\Bottoms\ManageBottom.cshtml" />
+    <Content Include="Views\Bottoms\_ViewStart.cshtml" />
+    <Content Include="Views\Tops\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -280,6 +337,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201604210046085_AddHomePage.resx">
       <DependentUpon>201604210046085_AddHomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251138582_fix.resx">
+      <DependentUpon>201604251138582_fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251152567_fix2.resx">
+      <DependentUpon>201604251152567_fix2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251213528_shoes.resx">
+      <DependentUpon>201604251213528_shoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251242481_shoesManage.resx">
+      <DependentUpon>201604251242481_shoesManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251406416_accessory.resx">
+      <DependentUpon>201604251406416_accessory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251558152_fixproblem.resx">
+      <DependentUpon>201604251558152_fixproblem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201604251710110_bottom1.resx">
+      <DependentUpon>201604251710110_bottom1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

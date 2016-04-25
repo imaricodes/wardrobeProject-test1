@@ -22,5 +22,11 @@ namespace wardrobeProject_test1.Models
         public System.Data.Entity.DbSet<wardrobeProject_test1.Models.Tops> Tops { get; set; }
 
         public System.Data.Entity.DbSet<wardrobeProject_test1.Models.Image> Images { get; set; }
+
+        public System.Data.Entity.DbSet<wardrobeProject_test1.Models.ShoesModel> ShoesModels { get; set; }
+
+        public System.Data.Entity.DbSet<wardrobeProject_test1.Models.Accessory> Accessories { get; set; }
+
+        public System.Data.Entity.DbSet<wardrobeProject_test1.Models.Bottom> Bottoms { get; set; }
     }
 }

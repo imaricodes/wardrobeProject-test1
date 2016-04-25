@@ -3,10 +3,14 @@
 
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+   
 }
+<h2>Tops</h2>
 
 <div class="container">
+    <p>
+        @Html.ActionLink("Add To Collection", "Create")
+    </p>
     <div class="row">
         <table class="table">
             <tr>
@@ -61,12 +65,12 @@
             }
 
         </table>
-        <p>
-            @Html.ActionLink("Add Top To Collection", "Create")
-        </p>
     </div>
   
 
+        <p>
+            @Html.ActionLink("Add To Collection", "Create")
+        </p>
 </div>
 
 
