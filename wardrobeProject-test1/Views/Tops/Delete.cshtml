@@ -1,4 +1,5 @@
-﻿@model wardrobeProject_test1.Models.Tops
+﻿@* this functions sort of like a "using" statement, tells application to reference this db when "model" is called *@
+@model wardrobeProject_test1.Models.Tops
 
 @{
     ViewBag.Title = "Delete";
@@ -17,6 +18,7 @@
         <img class="img-circle img-responsive img-center" src="http://placehold.it/200x200" alt="">
     </div>
 
+    @* .BeginForm is a helper extension of the formExtensions class *@
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 

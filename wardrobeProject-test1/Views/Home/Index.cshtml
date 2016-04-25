@@ -2,6 +2,8 @@
     ViewBag.Title = "Home Page";
 
 }
+
+@* This partial view references a partial view in the shared folder. It draws the nave menu and is used on every page *@
 @Html.Partial("_HeaderNavBarPartial")
 
 <!-- Header -->
@@ -11,19 +13,20 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="intro-message">
+                    <hr class="intro-divider">
                     <h1>DON'T BE NAKED</h1>
-                    @*<h3>A Template by Start Bootstrap</h3>
-                    <hr class="intro-divider">*@
+                    <h3>Choose Clothes</h3>
+                    <hr class="intro-divider">
                    
                 </div>
             </div>
         </div>
 
-        <!-- Team Members Row -->
+        <!-- Landing Page / Images for navigation -->
         <div class="row">
-            <div class="col-lg-12">
+            @*<div class="col-lg-12">
                 <h2 class="page-header">Choose Clothes</h2>
-            </div>
+            </div>*@
             <div class="col-lg-3 col-sm-6 text-center">
                 <a href='@Url.Action("Index","Tops")' ><img src="http://placehold.it/200x200" alt="" class="img-circle img-responsive img-center"/> </a>          
                 <h3>

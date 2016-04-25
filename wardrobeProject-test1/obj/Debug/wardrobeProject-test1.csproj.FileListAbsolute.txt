@@ -155,3 +155,10 @@ C:\Users\MRE\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrob
 C:\Users\MRE\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.accessory.resources
 C:\Users\MRE\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.fixproblem.resources
 C:\Users\MRE\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.bottom1.resources
+C:\Users\MRE8Air\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.fix.resources
+C:\Users\MRE8Air\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.fix2.resources
+C:\Users\MRE8Air\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.shoes.resources
+C:\Users\MRE8Air\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.shoesManage.resources
+C:\Users\MRE8Air\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.accessory.resources
+C:\Users\MRE8Air\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.fixproblem.resources
+C:\Users\MRE8Air\Documents\Visual Studio 2015\Projects\wardrobeProject-test1\wardrobeProject-test1\obj\Debug\wardrobeProject_test1.Migrations.bottom1.resources
